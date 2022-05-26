@@ -1,0 +1,183 @@
+.hero {
+    &__container {
+        padding-top: 137px;
+        position: relative;
+        background-color: #ffb8ca;
+        height: 502px;
+        @media screen and (min-width: 768px) {
+            height: 399px;
+            padding-top: 102px;
+        }
+    }
+    &__ice-cream {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        right: 32px;
+        @media screen and (min-width: 768px) {
+            right: 247px;
+            height: 336px;
+        }
+    }
+    &__elipse {
+        position: absolute;
+        right: 0px;
+        bottom: 75px;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__wrap {
+        margin-top: 35px;
+    }
+    &__milk {
+        position: absolute;
+        display: none;
+        bottom: 28px;
+        left: 34px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            // align-items: center;
+        }
+    }
+    &__detailed-button {
+        margin-top: 10px;
+    }
+
+    &__text {
+        width: 114px;
+        height: 48px;
+        display: none;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 150%;
+        /* or 12px */
+
+        color: #ffffff;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+    &__so-tasty {
+        z-index: 30;
+        position: absolute;
+        bottom: 0;
+        right: 34px;
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+    &__elipse-1 {
+        position: absolute;
+        left: 307px;
+        top: 31px;
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+.title {
+    position: relative;
+
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: 30;
+    &__text {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 96.5%;
+        text-transform: uppercase;
+        color: #d41443;
+    }
+}
+
+.outlets {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 94px;
+        right: 34px;
+        width: 60px;
+        &__cafes {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        &__food-tracks {
+            position: relative;
+        }
+        &__sub-title {
+            position: relative;
+            z-index: 20;
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 20px;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #d41443;
+        }
+        &__text {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 10px;
+            text-align: right;
+
+            color: #ffffff;
+        }
+        &__elipse {
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            z-index: 10;
+        }
+    }
+}
+
+.hero__list {
+    position: relative;
+    z-index: 20;
+    margin-top: 19px;
+    display: flex;
+}
+
+.hero__button.button {
+    padding: 5px 16px;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    background-color: #d41443;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero__item:not(:first-child) .button {
+    margin-left: 8px;
+    background-color: #fff;
+    color: #d41443;
+}

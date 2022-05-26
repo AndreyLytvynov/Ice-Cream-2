@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studia</title>
+    <!-- Подключает фавикон -->
+    <link rel="shortcut icon" type="image/svg" href="./images/123123124124.svg" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <a href="./index.html"><img class="logo" src="./images/logo.png" alt="логотип"></a>
+
+            <div class="box">
+                <button class="button header__button" type="button" data-modal-open><img class="button__burger"
+                        src="./images/burger.svg" alt=""></button>
+                <button class="button header__buy" type="button" data-modal-open1><span>Buy now</span> <img
+                        class="button__icon" src="./images/icon.svg" alt=""></button>
+            </div>
+
+
+            <div class=" header__backdrop" data-modal>
+                <div class="header__modal mobile-menu">
+                    <nav>
+                        <button class="button modal__button" type="button" data-modal-close><img class="button__close"
+                                src="./images/close.svg" alt=""></button>
+                        <button class="button modal__buy" type="button" data-modal-open1>Buy now</button>
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="./test.html">я люблю Катю</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./test.html">я люблю Катю</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./test.html">я люблю Катю</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./test.html">я люблю Катю</a></li>
+                            <li class="nav__item"><a class="nav__link" href="./test.html">я люблю Катю</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="title">ice cream </br>made with </br><span class="title__text">passion</span></h1>
+                <ul class="hero__list">
+                    <li class="hero__item"><button class="button hero__button" type="button">Product</button></li>
+                    <li class="hero__item"><button class="button hero__button" type="button">How it’s made?</button>
+                    </li>
+                </ul>
+                <img class="hero__elipse" src="./images/elipse.png" alt="">
+                <img class="hero__ice-cream" src="./images/ice-cream-hero.png" alt="">
+                <div class="hero__milk">
+                    <img class="hero__milk-image" src="./images/milk.png" alt="">
+                    <div class="hero__wrap">
+                        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut laboreet</p>
+                        <button class="button hero__detailed-button" type="button"><img src="./images/arrow.png"
+                                alt=""></button>
+                    </div>
+                </div>
+                <img class="hero__so-tasty" src="./images/soooo-tasty.png" alt="">
+                <img class="hero__elipse-1" src="./images/ellipse-1.png" alt="">
+                <div class="hero__outlets outlets">
+                    <div class="outlets__cafes">
+                        <p class="outlets__sub-title">16 <span class="outlets__text">cafes</span></p>
+                        <img class="outlets__elipse" src="./images/elipse-2.png" alt="" srcset="">
+                    </div>
+                    <div class="outlets__food-tracks">
+                        <p class="outlets__sub-title">23 <span class="outlets__text">food tracks</span></p>
+                        <img class="outlets__elipse" src="./images/elipse-2.png" alt="" srcset="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+    <div class="backdrop backdrop--is-open" data-modal1>
+        <div class="modal">
+            <form class="modal__register-form register-form" autocomplete="off">
+                <h3 class="register-form__main-title">
+                    Your order, please
+                </h3>
+                <ul class="register-form__list">
+
+                    <li class="register-form__item">
+                        <label class="register-form__field-title">
+                            <input class="register-form__field" type="text" name="name" placeholder=" " />
+                            <span class="register-form__name">Name</span>
+                            <svg class="register-form__icon">
+                                <use href="./images/symbol-defs.svg#icon-person-field"></use>
+                            </svg>
+                        </label>
+                    </li>
+                    <li class="register-form__item"> <label class="register-form__field-title">
+                            <input class="register-form__field" type="tel" name="telephone" placeholder=" " />
+                            <span class="register-form__name">Telephone</span>
+                            <svg class="register-form__icon">
+                                <use href="./images/symbol-defs.svg#icon-phone-field"></use>
+                            </svg>
+
+                        </label></li>
+                    <li class="register-form__item"><label class="register-form__field-title">
+                            <input class="register-form__field" type="email" name="mail" placeholder=" " />
+                            <span class="register-form__name">Mail</span>
+                            <svg class="register-form__icon">
+                                <use href="./images/symbol-defs.svg#icon-mail-field"></use>
+                            </svg>
+
+                        </label></li>
+
+                    <li class="register-form__item">
+                        <label class="register-form__field-title">
+                            <span class="register-form__name-comment">Коментарий</span>
+                            <textarea class="register-form__field-comment" name="comment" cols="30" rows="10"
+                                placeholder="Введите текст"></textarea>
+                        </label>
+                    </li>
+                </ul>
+
+
+                <label class="register-form__agreement agreement">
+                    <input class="register-form__checkbox" type="checkbox" name="agreement" />
+                    <svg class="agreement__icon">
+                        <use class="hren" href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                    <span class="agreement__text">Соглашаюсь с рассылкой и принимаю
+                        <a class="agreement__link" href="">Условия договора</a></span>
+                </label>
+
+                <button data-modal-open type="submit" class="agreement__button button">
+                    Отправить
+                </button>
+            </form>
+            <button class="button button-close" type="button" data-modal-close1><img class="button__close"
+                    src="./images/close.svg" alt=""></button>
+        </div>
+
+    </div>
+
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <!-- <script src="./js/test.js" type="module"></script> -->
+    <!-- <script src="./js/test1.js" type="module"></script> -->
+    <script src="./js/test2.js" type="module"></script>
+
+
+</body>
+
+</html>
